@@ -152,6 +152,7 @@ p {
   }
   .sluzbyvpravo {float:right}
   .sluzbyvlevo {float:left}
-  .sluzbyvpravo ul, .sluzbyvlevo ul {display:flex}
+  .sluzby ul {display:flex}
+  .sluzby li {flex: 0 1 calc(100% / 3)}
   
 }
