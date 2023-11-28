@@ -22,6 +22,7 @@ h2 {
   color: black;
   text-align: center;
   font-weight: 500;
+  margin-top:80px;
 }
 h1 {
   font-size: 28px;
@@ -83,6 +84,7 @@ section {
 }
 .button1 {
   background-color: #407bff;
+  border-color: #407bff;
 }
 
 .button1:hover {
@@ -91,6 +93,7 @@ section {
 
 .button2 {
   background-color: #8b8b8b;
+  border-color: #8b8b8b;
 }
 
 .button2:hover {
@@ -117,7 +120,7 @@ section {
   margin-bottom: 15px;
 }
 
-.sluzby {
+.sluzby img {
   flex: 0 0 50px;
   margin-right: 25px;
   text-align: center;
@@ -128,6 +131,10 @@ section {
   width: auto;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
 @media screen and (min-width: 640px) {
   .section {
     margin: 80px 0;
@@ -149,12 +156,16 @@ section {
 
   .boxes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 40px;
+  }
+
+  .sluzby-text {
+    margin-top: 80px;
   }
   .sluzby {
     flex: 0 0 calc((100% - 40px) / 3);
-    display: block;
+    align-items: center;
     padding: 30px 20px;
     text-align: center;
   }
@@ -217,11 +228,8 @@ section {
     flex: 0 0 550px;
     margin-top: 0;
   }
-
-  .sluzby-alt .boxes {
-    order: 1;
-  }
-  .sluzby-alt .sluzby-text {
-    order: 2;
-  }
+  .sluzby-alt .boxes_left{order:1}
+  .sluzby-text .right{order:2}
+ .sluzby-alt .boxes-right {order:2}
+  .sluzby-text .left{order:1}
 }
